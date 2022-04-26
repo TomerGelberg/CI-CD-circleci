@@ -19,8 +19,7 @@ jobs:
       - run:
           name: "Switch to Python v3.7"
           command: |
-            $var=pyenv versions
-            echo "$var"
+            pyenv versions
             pyenv global 3.7.0
 
 # Invoke jobs via workflows
