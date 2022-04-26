@@ -19,7 +19,7 @@ jobs:
       - run:
           name: "Switch to Python v3.7"
           command: |
-            $var=python --version
+            $var=python3 --version
             echo "$var"
             pyenv versions
             pyenv global 3.7.0
