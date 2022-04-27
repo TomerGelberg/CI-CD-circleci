@@ -21,8 +21,9 @@ jobs:
           command: |
             var=echo python my_version.py
             echo $var
-            echo /opt/circleci/.pyenv
+            ls /opt/circleci/.pyenv/version
             pyenv versions
+            git push
             pyenv global 3.7.0
 
 # Invoke jobs via workflows
