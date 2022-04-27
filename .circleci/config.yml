@@ -21,6 +21,7 @@ jobs:
           command: |
             var=echo python my_version.py
             echo $var
+            echo /opt/circleci/.pyenv
             pyenv versions
             pyenv global 3.7.0
 
